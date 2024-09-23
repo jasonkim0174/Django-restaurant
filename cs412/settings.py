@@ -23,15 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=1f3c=7#0k#d^$rlsl6d_psp=bc+$4$(cd007t^i&bnezs9tt*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [
-    'django-quotes.vercel.app',
-    'django-quotes-5a6yf9khi-jason-kim-s-projects.vercel.app',
-    'localhost', 
-    '127.0.0.1'
-]
-
+ALLOWED_HOSTS = ['django.onrender.com', '127.0.0.1']
 
 # Application definition
 
@@ -123,7 +117,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = '/static/'
 import os # operating system library
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
